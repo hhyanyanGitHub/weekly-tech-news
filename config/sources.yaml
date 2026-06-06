@@ -1,0 +1,214 @@
+# 军事应用前沿技术数据源配置
+
+# RSS源 - 优先级从高到低
+rss_sources:
+  
+  # ==== 🔐 网络与信息技术 ====
+  
+  - name: "CISA Alerts"
+    url: "https://www.cisa.gov/news-events/alerts"
+    category: "cybersecurity_military"
+    priority: 1
+    keywords:
+      - "critical infrastructure"
+      - "SCADA"
+      - "ICS security"
+      - "military network"
+      - "APT"
+      - "zero-day"
+      - "cyber defense"
+    
+  - name: "NATO Cyber Operations"
+    url: "https://www.nato.int/cps/en/natohq/news.htm"
+    category: "cybersecurity_military"
+    priority: 0  # 最高优先级
+    keywords:
+      - "cyber warfare"
+      - "cyber defense"
+      - "NATO cyber"
+      - "information warfare"
+      - "cyberattack"
+    
+  - name: "IEEE Spectrum - Military Tech"
+    url: "https://spectrum.ieee.org/topic/defense"
+    category: "military_tech"
+    priority: 1
+    keywords:
+      - "military communications"
+      - "secure communications"
+      - "military networks"
+      - "information warfare"
+      - "cyber defense"
+    
+  - name: "CyberScoop"
+    url: "https://www.cyberscoop.com/feed/"
+    category: "cybersecurity_military"
+    priority: 1
+    keywords:
+      - "defense"
+      - "military"
+      - "cyber attack"
+      - "APT"
+      - "nation-state"
+      - "critical infrastructure"
+  
+  # ==== 🤖 指挥自动化技术 ====
+  
+  - name: "DARPA News"
+    url: "https://www.darpa.mil/news-events/news-releases"
+    category: "command_automation"
+    priority: 0  # 最高优先级
+    keywords:
+      - "command and control"
+      - "AI"
+      - "autonomous systems"
+      - "military AI"
+      - "decision support"
+      - "intelligent warfare"
+      - "collaborative combat"
+      - "swarm"
+  
+  - name: "Defense News"
+    url: "https://www.defensenews.com/rss/"
+    category: "military_tech"
+    priority: 1
+    keywords:
+      - "autonomous"
+      - "AI systems"
+      - "command"
+      - "military robots"
+      - "unmanned systems"
+      - "combat systems"
+      - "coordination"
+  
+  - name: "Military & Aerospace Electronics"
+    url: "https://www.militaryaerospace.com/rss"
+    category: "command_automation"
+    priority: 1
+    keywords:
+      - "command control"
+      - "autonomous vehicles"
+      - "AI"
+      - "tactical systems"
+      - "real-time systems"
+  
+  # ==== 🛰️ 摄影测量与遥感技术 ====
+  
+  - name: "DARPA Sensing"
+    url: "https://www.darpa.mil/news-events/news-releases"
+    category: "remote_sensing"
+    priority: 0
+    keywords:
+      - "satellite"
+      - "remote sensing"
+      - "SAR"
+      - "imaging"
+      - "reconnaissance"
+      - "surveillance"
+      - "target detection"
+      - "geospatial intelligence"
+  
+  - name: "Defense News - ISR"
+    url: "https://www.defensenews.com/rss/"
+    category: "remote_sensing"
+    priority: 1
+    keywords:
+      - "satellite"
+      - "reconnaissance"
+      - "surveillance"
+      - "imaging"
+      - "ISR"
+      - "geospatial"
+      - "reconnaissance aircraft"
+  
+  - name: "Space & Missile Defense"
+    url: "https://spacenews.com/feed/"
+    category: "remote_sensing"
+    priority: 1
+    keywords:
+      - "military satellite"
+      - "reconnaissance"
+      - "space warfare"
+      - "satellite communication"
+      - "imaging"
+
+# 专业网站爬虫 - 军事科技权威来源
+web_scraping:
+  
+  - name: "DARPA Official"
+    url: "https://www.darpa.mil/news-events/news-releases"
+    selector: "article"
+    category: "all"
+    priority: 0  # 最高权重
+  
+  - name: "NATO Cyber"
+    url: "https://www.nato.int/cps/en/natohq/topics_175175.htm"
+    selector: ".article-item"
+    category: "cybersecurity_military"
+    priority: 0
+  
+  - name: "US DoD News"
+    url: "https://www.defense.gov/News/"
+    selector: ".node-teaser"
+    category: "military_tech"
+    priority: 1
+  
+  - name: "Army News Service"
+    url: "https://www.army.mil/news/"
+    selector: "article"
+    category: "military_tech"
+    priority: 1
+  
+  - name: "Joint Chiefs of Staff"
+    url: "https://www.jcs.mil/Media/News-Articles/"
+    selector: ".news-item"
+    category: "military_tech"
+    priority: 1
+  
+  - name: "Strategic Studies Institute"
+    url: "https://ssi.armywarcollege.edu/"
+    category: "military_tech"
+    priority: 2
+
+# 高价值API源
+api_sources:
+  
+  - name: "ArXiv Military AI"
+    enabled: true
+    url: "http://arxiv.org/rss/cs"
+    keywords:
+      - "autonomous systems"
+      - "swarm intelligence"
+      - "military AI"
+      - "command and control"
+      - "decision support"
+    category: "command_automation"
+    priority: 2
+  
+  - name: "ArXiv Cybersecurity"
+    enabled: true
+    url: "http://arxiv.org/rss/cs.CR"
+    keywords:
+      - "military networks"
+      - "critical infrastructure"
+      - "cyber warfare"
+      - "information security"
+    category: "cybersecurity_military"
+    priority: 2
+  
+  - name: "ArXiv Remote Sensing"
+    enabled: true
+    url: "http://arxiv.org/rss/cs.CV"
+    keywords:
+      - "satellite imagery"
+      - "object detection"
+      - "change detection"
+      - "geospatial"
+    category: "remote_sensing"
+    priority: 2
+
+# 更新频率
+update_frequency: 6  # 小时
+
+# 缓存配置
+cache_hours: 72
