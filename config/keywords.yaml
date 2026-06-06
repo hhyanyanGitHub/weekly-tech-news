@@ -1,4 +1,4 @@
-# 军事应用技术关键词和分类配置
+# 军事应用前沿技术关键词和分类配置
 
 categories:
   
@@ -29,6 +29,11 @@ categories:
       - "信息防护"
       - "通信安全"
       - "数据安全"
+      - "军事网络"
+      - "指挥系统"
+      - "防线"
+      - "网络防线"
+      - "CISA"
       
       # 英文关键词
       - "cyber warfare"
@@ -53,6 +58,7 @@ categories:
       - "data protection"
       - "NATO cyber"
       - "cyber operation"
+      - "military communications"
     
     weight: 1.0
 
@@ -94,10 +100,15 @@ categories:
       - "6G"
       - "实时通信"
       - "低延迟"
+      - "DARPA"
+      - "军事机器人"
+      - "自动化"
+      - "自主"
       
       # 英文关键词
       - "command automation"
       - "command and control"
+      - "C4ISR"
       - "AI"
       - "artificial intelligence"
       - "autonomous"
@@ -126,6 +137,9 @@ categories:
       - "tactical systems"
       - "cooperative control"
       - "collaborative combat"
+      - "DARPA"
+      - "swarm intelligence"
+      - "decision making"
     
     weight: 0.95
 
@@ -177,6 +191,9 @@ categories:
       - "快速成像"
       - "高分辨率"
       - "超高分辨率"
+      - "侦察"
+      - "监视"
+      - "DARPA"
       
       # 英文关键词
       - "remote sensing"
@@ -218,71 +235,6 @@ categories:
     
     weight: 0.9
 
-  # ============ ⚔️ 军事应用突破 ============
-  military_breakthrough:
-    name: "⚔️ 军事应用突破"
-    name_en: "Military Technology Breakthrough"
-    description: "多项技术融合的军事创新、战术革新、装备突破、跨域整合"
-    keywords:
-      # 中文关键词
-      - "军事"
-      - "军事技术"
-      - "防务"
-      - "国防"
-      - "武器系统"
-      - "新型武器"
-      - "装备"
-      - "新装备"
-      - "战术"
-      - "战略"
-      - "作战"
-      - "战争"
-      - "军事创新"
-      - "技术突破"
-      - "突破"
-      - "进展"
-      - "应用"
-      - "融合"
-      - "融合作战"
-      - "多域作战"
-      - "联合作战"
-      - "一体化"
-      - "智能化"
-      - "信息化"
-      - "军事改革"
-      - "战斗力"
-      - "作战能力"
-      - "防御"
-      - "攻击"
-      - "打击"
-      
-      # 英文关键词
-      - "military"
-      - "defense"
-      - "armed forces"
-      - "military technology"
-      - "weapon system"
-      - "warfare"
-      - "combat"
-      - "tactical"
-      - "strategic"
-      - "breakthrough"
-      - "advancement"
-      - "innovation"
-      - "military innovation"
-      - "multi-domain"
-      - "joint operation"
-      - "integrated"
-      - "warfare"
-      - "battle"
-      - "engagement"
-      - "military application"
-      - "deployment"
-      - "capability"
-      - "lethality"
-    
-    weight: 0.85
-
 # ==========================
 # 重要性评分配置
 # ==========================
@@ -290,10 +242,12 @@ importance_scoring:
   
   # 数据源权威性倍数（越高表示越权威）
   source_authority:
-    # 最高权威（1.5倍）
-    "DARPA Official": 1.5
+    # 最高权威（1.5倍及以上）
     "DARPA": 1.5
+    "DARPA Official": 1.5
+    "DARPA News": 1.5
     "NATO": 1.4
+    "NATO Cyber": 1.4
     "NATO Cyber Operations": 1.5
     "US DoD": 1.4
     "Department of Defense": 1.4
@@ -302,11 +256,13 @@ importance_scoring:
     
     # 高权威（1.2-1.3倍）
     "CISA": 1.3
+    "CISA Alerts": 1.3
     "Defense News": 1.2
+    "Army News": 1.2
+    "Army News Service": 1.2
     "Military & Aerospace": 1.2
     "IEEE Spectrum": 1.2
     "ArXiv": 1.1
-    "Army News": 1.2
     
     # 中等权威（1.0-1.1倍）
     "CyberScoop": 1.1
