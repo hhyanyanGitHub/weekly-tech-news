@@ -1,0 +1,365 @@
+# 军事应用技术关键词和分类配置
+
+categories:
+  
+  # ============ 🔐 网络与信息技术 ============
+  cybersecurity_military:
+    name: "🔐 网络与信息技术"
+    name_en: "Cybersecurity & Information Warfare"
+    description: "军事网络防护、信息战、指挥控制系统安全、关键基础设施防护"
+    keywords:
+      # 中文关键词
+      - "网络安全"
+      - "信息战"
+      - "信息对抗"
+      - "网络防御"
+      - "网络攻击"
+      - "信息系统"
+      - "指控系统"
+      - "关键基础设施"
+      - "SCADA"
+      - "工业控制"
+      - "密码学"
+      - "量子通信"
+      - "后量子密码"
+      - "零信任"
+      - "APT"
+      - "网络威胁"
+      - "网络对抗"
+      - "信息防护"
+      - "通信安全"
+      - "数据安全"
+      
+      # 英文关键词
+      - "cyber warfare"
+      - "cyber defense"
+      - "cyber attack"
+      - "information warfare"
+      - "cyber security"
+      - "critical infrastructure"
+      - "SCADA security"
+      - "ICS security"
+      - "military network"
+      - "command and control"
+      - "APT"
+      - "zero-day"
+      - "nation-state"
+      - "cyber threat"
+      - "quantum cryptography"
+      - "post-quantum"
+      - "zero trust"
+      - "encryption"
+      - "secure communication"
+      - "data protection"
+      - "NATO cyber"
+      - "cyber operation"
+    
+    weight: 1.0
+
+  # ============ 🤖 指挥自动化技术 ============
+  command_automation:
+    name: "🤖 指挥自动化技术"
+    name_en: "Command Automation & Intelligent Warfare"
+    description: "AI军事应用、自主武器系统、指挥决策支持、多域协同、实时协调"
+    keywords:
+      # 中文关键词
+      - "指挥自动化"
+      - "指挥控制"
+      - "AI"
+      - "人工智能"
+      - "自主系统"
+      - "自主武器"
+      - "机器学习"
+      - "深度学习"
+      - "智能化"
+      - "无人系统"
+      - "无人机"
+      - "协同作战"
+      - "多域融合"
+      - "态势感知"
+      - "决策支持"
+      - "实时协调"
+      - "实时决策"
+      - "数据融合"
+      - "群体协同"
+      - "自适应"
+      - "智能决策"
+      - "智能化作战"
+      - "自主决策"
+      - "自主作战"
+      - "智能战争"
+      - "认知战"
+      - "边缘计算"
+      - "5G"
+      - "6G"
+      - "实时通信"
+      - "低延迟"
+      
+      # 英文关键词
+      - "command automation"
+      - "command and control"
+      - "AI"
+      - "artificial intelligence"
+      - "autonomous"
+      - "autonomous systems"
+      - "autonomous weapons"
+      - "machine learning"
+      - "deep learning"
+      - "intelligent"
+      - "UAV"
+      - "unmanned"
+      - "drone"
+      - "collaborative"
+      - "swarm"
+      - "decision support"
+      - "tactical AI"
+      - "data fusion"
+      - "real-time"
+      - "multi-domain"
+      - "integration"
+      - "situational awareness"
+      - "intelligent warfare"
+      - "autonomous decision"
+      - "edge computing"
+      - "5G military"
+      - "military AI"
+      - "tactical systems"
+      - "cooperative control"
+      - "collaborative combat"
+    
+    weight: 0.95
+
+  # ============ 🛰️ 摄影测量与遥感技术 ============
+  remote_sensing:
+    name: "🛰️ 摄影测量与遥感技术"
+    name_en: "Photogrammetry & Remote Sensing"
+    description: "军事侦察卫星、地理空间情报、SAR成像、实时监视、目标识别、态势评估"
+    keywords:
+      # 中文关键词
+      - "遥感"
+      - "遥感监测"
+      - "遥感卫星"
+      - "卫星"
+      - "卫星图像"
+      - "卫星侦察"
+      - "侦察卫星"
+      - "地球观测"
+      - "地理空间"
+      - "地理情报"
+      - "SAR"
+      - "合成孔径雷达"
+      - "SAR成像"
+      - "雷达成像"
+      - "光学遥感"
+      - "红外遥感"
+      - "多光谱"
+      - "高光谱"
+      - "无人机"
+      - "UAV"
+      - "航拍"
+      - "无人侦察"
+      - "无人监视"
+      - "目标检测"
+      - "目标识别"
+      - "变化检测"
+      - "图像识别"
+      - "图像分析"
+      - "影像处理"
+      - "3D重建"
+      - "三维建模"
+      - "地形测绘"
+      - "态势评估"
+      - "战场评估"
+      - "损伤评估"
+      - "监视侦察"
+      - "ISR"
+      - "实时成像"
+      - "快速成像"
+      - "高分辨率"
+      - "超高分辨率"
+      
+      # 英文关键词
+      - "remote sensing"
+      - "satellite"
+      - "satellite imagery"
+      - "satellite reconnaissance"
+      - "geospatial"
+      - "geospatial intelligence"
+      - "GEOINT"
+      - "SAR"
+      - "synthetic aperture radar"
+      - "SAR imaging"
+      - "optical imaging"
+      - "infrared"
+      - "hyperspectral"
+      - "multispectral"
+      - "UAV"
+      - "drone"
+      - "unmanned aerial"
+      - "reconnaissance"
+      - "surveillance"
+      - "object detection"
+      - "target detection"
+      - "change detection"
+      - "image recognition"
+      - "image analysis"
+      - "3D reconstruction"
+      - "mapping"
+      - "terrain mapping"
+      - "damage assessment"
+      - "battle damage"
+      - "ISR"
+      - "imaging"
+      - "real-time imaging"
+      - "high resolution"
+      - "tactical imaging"
+      - "military satellite"
+      - "space-based surveillance"
+    
+    weight: 0.9
+
+  # ============ ⚔️ 军事应用突破 ============
+  military_breakthrough:
+    name: "⚔️ 军事应用突破"
+    name_en: "Military Technology Breakthrough"
+    description: "多项技术融合的军事创新、战术革新、装备突破、跨域整合"
+    keywords:
+      # 中文关键词
+      - "军事"
+      - "军事技术"
+      - "防务"
+      - "国防"
+      - "武器系统"
+      - "新型武器"
+      - "装备"
+      - "新装备"
+      - "战术"
+      - "战略"
+      - "作战"
+      - "战争"
+      - "军事创新"
+      - "技术突破"
+      - "突破"
+      - "进展"
+      - "应用"
+      - "融合"
+      - "融合作战"
+      - "多域作战"
+      - "联合作战"
+      - "一体化"
+      - "智能化"
+      - "信息化"
+      - "军事改革"
+      - "战斗力"
+      - "作战能力"
+      - "防御"
+      - "攻击"
+      - "打击"
+      
+      # 英文关键词
+      - "military"
+      - "defense"
+      - "armed forces"
+      - "military technology"
+      - "weapon system"
+      - "warfare"
+      - "combat"
+      - "tactical"
+      - "strategic"
+      - "breakthrough"
+      - "advancement"
+      - "innovation"
+      - "military innovation"
+      - "multi-domain"
+      - "joint operation"
+      - "integrated"
+      - "warfare"
+      - "battle"
+      - "engagement"
+      - "military application"
+      - "deployment"
+      - "capability"
+      - "lethality"
+    
+    weight: 0.85
+
+# ==========================
+# 重要性评分配置
+# ==========================
+importance_scoring:
+  
+  # 数据源权威性倍数（越高表示越权威）
+  source_authority:
+    # 最高权威（1.5倍）
+    "DARPA Official": 1.5
+    "DARPA": 1.5
+    "NATO": 1.4
+    "NATO Cyber Operations": 1.5
+    "US DoD": 1.4
+    "Department of Defense": 1.4
+    "Pentagon": 1.4
+    "Joint Chiefs of Staff": 1.4
+    
+    # 高权威（1.2-1.3倍）
+    "CISA": 1.3
+    "Defense News": 1.2
+    "Military & Aerospace": 1.2
+    "IEEE Spectrum": 1.2
+    "ArXiv": 1.1
+    "Army News": 1.2
+    
+    # 中等权威（1.0-1.1倍）
+    "CyberScoop": 1.1
+    "Space News": 1.1
+    "Official Release": 1.2
+    
+    # 默认权重
+    "default": 0.9
+
+  # 内容新鲜度衰减
+  freshness_decay:
+    max_score_hours: 1
+    half_life_days: 7
+
+  # 关键词匹配度提升
+  keyword_boost:
+    high_relevance: 1.4
+    medium_relevance: 1.2
+    low_relevance: 1.0
+
+# ==========================
+# 排序和限制
+# ==========================
+sorting:
+  primary: "importance_score"
+  secondary: "publish_date"
+  order: "descending"
+
+limits:
+  max_items_per_digest: 10
+  min_items_per_digest: 3
+  max_items_per_category: 4  # 每个分类最多4条
+
+# ==========================
+# 过滤规则
+# ==========================
+filters:
+  min_relevance_score: 0.6
+  min_content_length: 50
+  max_age_days: 30
+  
+  # 排除关键词
+  exclude_keywords:
+    - "opinion"
+    - "advertisement"
+    - "unrelated"
+
+# ==========================
+# 输出配置
+# ==========================
+output:
+  language: "chinese_english"  # 中英文对照
+  summary_length: 150  # 摘要字数
+  include_source: true
+  include_date: true
+  include_importance_score: true
