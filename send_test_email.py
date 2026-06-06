@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-测试脚本：生成军事应用技术前沿周刊并发送邮件
+测试脚本：生成军事应用技术前沿周刊并发送邮件（含原文翻译）
 """
 
 import os
@@ -26,7 +26,8 @@ def create_military_tech_digest():
             'source': 'DARPA',
             'link': 'https://www.darpa.mil/news-events/news-releases',
             'published': '2026-06-05',
-            'importance_score': 96
+            'importance_score': 96,
+            'primary_category': '🤖 指挥自动化技术'
         },
         {
             'rank': 2,
@@ -37,7 +38,8 @@ def create_military_tech_digest():
             'source': 'NATO Cyber Operations',
             'link': 'https://www.nato.int/cps/en/natohq/topics_175175.htm',
             'published': '2026-06-04',
-            'importance_score': 93
+            'importance_score': 93,
+            'primary_category': '🔐 网络与信息技术'
         },
         {
             'rank': 3,
@@ -48,7 +50,8 @@ def create_military_tech_digest():
             'source': 'DARPA',
             'link': 'https://www.darpa.mil/news-events/news-releases',
             'published': '2026-06-03',
-            'importance_score': 91
+            'importance_score': 91,
+            'primary_category': '🛰️ 摄影测量与遥感技术'
         },
         {
             'rank': 4,
@@ -59,7 +62,8 @@ def create_military_tech_digest():
             'source': 'CISA',
             'link': 'https://www.cisa.gov/news-events/alerts',
             'published': '2026-06-02',
-            'importance_score': 88
+            'importance_score': 88,
+            'primary_category': '🔐 网络与信息技术'
         },
         {
             'rank': 5,
@@ -70,7 +74,8 @@ def create_military_tech_digest():
             'source': 'US DoD',
             'link': 'https://www.defense.gov/News/',
             'published': '2026-06-01',
-            'importance_score': 89
+            'importance_score': 89,
+            'primary_category': '🤖 指挥自动化技术'
         },
         {
             'rank': 6,
@@ -81,7 +86,8 @@ def create_military_tech_digest():
             'source': 'NATO',
             'link': 'https://www.nato.int/cps/en/natohq/news.htm',
             'published': '2026-05-31',
-            'importance_score': 87
+            'importance_score': 87,
+            'primary_category': '🔐 网络与信息技术'
         },
         {
             'rank': 7,
@@ -92,7 +98,8 @@ def create_military_tech_digest():
             'source': 'Military & Aerospace',
             'link': 'https://www.militaryaerospace.com',
             'published': '2026-05-30',
-            'importance_score': 85
+            'importance_score': 85,
+            'primary_category': '🛰️ 摄影测量与遥感技术'
         },
         {
             'rank': 8,
@@ -103,7 +110,8 @@ def create_military_tech_digest():
             'source': 'Defense News',
             'link': 'https://www.defensenews.com/rss/',
             'published': '2026-05-29',
-            'importance_score': 82
+            'importance_score': 82,
+            'primary_category': '⚔️ 军事应用突破'
         },
         {
             'rank': 9,
@@ -114,7 +122,8 @@ def create_military_tech_digest():
             'source': 'Defense News',
             'link': 'https://www.defensenews.com/rss/',
             'published': '2026-05-28',
-            'importance_score': 84
+            'importance_score': 84,
+            'primary_category': '🤖 指挥自动化技术'
         },
         {
             'rank': 10,
@@ -125,7 +134,8 @@ def create_military_tech_digest():
             'source': 'Army News Service',
             'link': 'https://www.army.mil/news/',
             'published': '2026-05-27',
-            'importance_score': 83
+            'importance_score': 83,
+            'primary_category': '⚔️ 军事应用突破'
         }
     ]
     
@@ -135,26 +145,22 @@ def send_test_email():
     """发送测试邮件"""
     
     print("\n" + "="*70)
-    print("🚀 全球前沿科技进展周刊 - 军事应用技术版")
+    print("🚀 全球前沿科技进展周刊 - 军事应用技术版（含原文翻译）")
     print("="*70)
     print()
     
     # 生成日报
     items = create_military_tech_digest()
     
-    # 显示日报内容
+    # 显示日报内容简览
     for item in items:
-        print(f"#{item['rank']} {item['category']}")
+        print(f"#{item['rank']} {item['primary_category']}")
         print(f"  标题: {item['title']}")
-        print(f"  Title: {item['title_en']}")
-        print(f"  摘要: {item['summary'][:120]}...")
-        print(f"  📰 来源: {item['source']}")
-        print(f"  ⭐ 重要性: {item['importance_score']}/100")
-        print(f"  🔗 链接: {item['link']}")
+        print(f"  摘要: {item['summary'][:100]}...")
         print()
     
     print("="*70)
-    print("\n正在尝试发送邮件...\n")
+    print("\n正在尝试发送邮件（包含原文翻译内容）...\n")
     
     # 尝试发送邮件
     try:
@@ -198,7 +204,8 @@ def send_test_email():
         if success:
             print(f"\n✅ 邮件发送成功！")
             print(f"📬 请检查 {recipient} 的收件箱（可能需要稍等几秒）")
-            print(f"📝 如果没看到，请检查垃圾邮件/促销邮件文件夹")
+            print(f"📝 邮件包含原文内容的中文概括翻译")
+            print(f"📄 如果没看到，请检查垃圾邮件/促销邮件文件夹")
             return True
         else:
             print("\n❌ 邮件发送失败")
